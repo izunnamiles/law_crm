@@ -3,7 +3,7 @@
 <div class="d-flex justify-content-end">
     <form class="d-flex" role="search">
         <input class="form-control me-2" name="q" minlength="2" "search" placeholder="Search Client" aria-label="Search">
-        <button class="btn btn-sm btn-primary" type="submit">search</button>
+        <button class="btn btn-sm btn-outline-secondary" type="submit">search</button>
     </form>
 </div>
 
@@ -25,7 +25,7 @@
             <td>{{$client->email}}</td>
             <td>{{$client->date_profiled}}</td>
             <td>
-                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modalButton" href="#exampleModal" data-title="{{$client->first_name.' '.$client->last_name}}" data-view="{{ route('client-info', ['id' => $client->id]) }}" data-params="0" data-type="wide">
+                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modalButton" href="#exampleModal" data-title="{{$client->first_name.' '.$client->last_name}}" data-view="{{ route('client-info', ['id' => $client->id]) }}" data-params="0" data-type="wide">
                     View Profile
                 </button>
             </td>

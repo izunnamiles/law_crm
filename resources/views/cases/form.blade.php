@@ -90,7 +90,7 @@
         </div>
     </div>
 
-    <button type="submit" class="submit btn btn-primary">Submit</button>
+    <button type="submit" class="submit btn btn-secondary">Submit</button>
 </form>
 <script>
     $(document).ready(function() {
@@ -98,7 +98,7 @@
         preselection();
         $('body').on('click', '#client_form .submit', function(e) {
             e.preventDefault();
-            
+
             var url = "{{ route('create') }}";
             let client_type = $('input:radio[name=client_type]:checked').val();
 
