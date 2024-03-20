@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('passport')->nullable();
-            $table->string('date_of_birth');
-            $table->string('date_profiled');
+            $table->date('date_of_birth');
+            $table->date('date_profiled');
             $table->timestamps();
         });
     }
