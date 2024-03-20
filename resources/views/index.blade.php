@@ -36,10 +36,13 @@
             </div>
         </div>
     </nav>
-    <div class="container d-flex justify-content-center">
-        <div class="col-6">
-            @yield('content')
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="col-6">
+                @yield('content')
+            </div>
         </div>
+
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -55,9 +58,17 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="bottom: 0;">
+            <p class="col-md-4 mb-0 text-muted">&copy; {{date('Y')}} Law Firm X, Inc</p>
+
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+        </footer>
 
     </div>
 </body>
