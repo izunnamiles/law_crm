@@ -34,4 +34,14 @@ class CreateCaseRequest extends FormRequest
             'case_details' => 'required'
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'client_id.exists' => 'The selected client does not exist',
+            'email.unique' => 'The provided email is tied to an existing client',
+            'passport.max' => 'The maximum allowed file size is 5MB',
+            'counsel.exists' => 'The selected counsel does not exist',
+        ];
+    }
 }
