@@ -30,7 +30,7 @@
                         <a class="nav-link" href="/">Clients</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/cases/create">Add Case</a>
+                        <a class="nav-link" href="/cases/create">Add Case / Profile Client</a>
                     </li>
                 </ul>
             </div>
