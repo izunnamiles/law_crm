@@ -31,16 +31,21 @@ DB_USERNAME=database username
 DB_PASSWORD=database password (optional: only when your database username has a password)
 ```
 
--We can now proceed to add the necessary tables by running migrations (We added a seeder for primary counsels), so we can start working with the app
+- We can now proceed to add the necessary tables by running migrations (We added a seeder for primary counsels), so we can start working with the app
 
 ```
 php artisan migrate --seed
 ```
 
--We can now serve our application to have access to the UI of the app, we copy the link from the below command and paste on our browser, 
+- We can now serve our application to have access to the UI of the app, we copy the link from the below command and paste on our browser, 
 
 ```
 php artisan serve
+```
+- For Testing
+  
+```
+php artisan test --filter AppTest 
 ```
 
 Thanks :sunglasses:
