@@ -24,7 +24,8 @@ class ClientController extends Controller
     {
         $relation = [
             'cases' => function ($q) {
-                $q->take(5);
+                $q->take(5)
+                ->orderBy('created_at','DESC');
             },
             'cases.counsel'
         ];
